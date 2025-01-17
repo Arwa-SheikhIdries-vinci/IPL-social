@@ -4,13 +4,7 @@ export class PasswordChecker {
         return password.length >= 8;
     }
     specialCharaters(password){
-        if(password.match(/[!@#$%^&*(),.?":{}|<>]/)){
-            return true;
-        }
-        if(!password.match(/[!@#$%^&*(),.?":{}|<>]/)){
-            return false;
+        return /[!@#$%^&*(),.?":{}|<>]/.test(password);
     }
-}
-
-
+    
 }
