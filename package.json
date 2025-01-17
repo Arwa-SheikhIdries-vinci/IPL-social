@@ -1,0 +1,11 @@
+{
+  "name": "ipl-social",
+  "author": "SHEIKH IDRIES Arwa",
+  "scripts": {
+    "test": "jasmine",
+    "build": "echo 'No build step defined'"
+  },
+  "devDependencies": {
+    "jasmine": "^5.5.0"
+  }
+}
