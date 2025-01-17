@@ -13,6 +13,9 @@ export class PasswordChecker {
         if (!/ipl/i.test(password)) {
             return true;
         }
+        if (/IPL/i.test(password)) {
+            return false;
+        }
     }
 
 }
