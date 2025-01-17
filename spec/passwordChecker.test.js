@@ -31,5 +31,13 @@ describe("PasswordChecker", function () {
     
         expect(result).toBe(true);
     });
+
+    it("should return false if the password has no special character", () => {
+        const password = "password";
+    
+        const result = new PasswordChecker().specialCharaters(password);
+    
+        expect(result).toBe(false);
+    });
     
 });

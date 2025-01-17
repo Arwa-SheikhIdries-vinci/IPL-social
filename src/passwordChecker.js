@@ -7,7 +7,10 @@ export class PasswordChecker {
         if(password.match(/[!@#$%^&*(),.?":{}|<>]/)){
             return true;
         }
+        if(!password.match(/[!@#$%^&*(),.?":{}|<>]/)){
+            return false;
     }
+}
 
 
 }
