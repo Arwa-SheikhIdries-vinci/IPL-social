@@ -24,4 +24,12 @@ describe("PasswordChecker", function () {
         expect(result).toBe(false);
     });
     
+    it("should return true if the password has 1 special character", () => {
+        const password = "password!";
+    
+        const result = new PasswordChecker().specialCharaters(password);
+    
+        expect(result).toBe(true);
+    });
+    
 });
