@@ -55,5 +55,13 @@ describe("PasswordChecker", function () {
     
         expect(result).toBe(false);
     });
+
+    it("should return true if the password does not contain the string IPL in any case (uppercase or lowercase).", () => {
+        const password = "password";
+
+        const result = new PasswordChecker().notContainIPL(password);
+
+        expect(result).toBe(true);
+    });
     
 });
