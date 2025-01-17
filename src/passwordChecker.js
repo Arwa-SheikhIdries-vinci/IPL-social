@@ -6,5 +6,9 @@ export class PasswordChecker {
     specialCharaters(password){
         return /[!@#$%^&*(),.?":{}|<>]/.test(password);
     }
-    
+    number(password){
+        if(password.match(/\d+/g)){
+            return true;
+        }
+    }
 }

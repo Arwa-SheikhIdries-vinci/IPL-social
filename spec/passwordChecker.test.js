@@ -39,5 +39,13 @@ describe("PasswordChecker", function () {
     
         expect(result).toBe(false);
     });
+
+    it("should return true if the password has 1 number", () => {
+        const password = "password1";
+    
+        const result = new PasswordChecker().number(password);
+    
+        expect(result).toBe(true);
+    });
     
 });
