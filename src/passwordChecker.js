@@ -7,11 +7,6 @@ export class PasswordChecker {
         return /[!@#$%^&*(),.?":{}|<>]/.test(password);
     }
     number(password){
-        if(password.match(/\d+/g)){
-            return true;
-        }
-        if(!password.match(/\d+/g)){
-            return false;
-        }
+        return /\d/.test(password);
     }
 }
