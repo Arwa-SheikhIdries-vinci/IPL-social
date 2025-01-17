@@ -10,12 +10,7 @@ export class PasswordChecker {
         return /\d/.test(password);
     }
     notContainIPL(password){
-        if (!/ipl/i.test(password)) {
-            return true;
-        }
-        if (/IPL/i.test(password)) {
-            return false;
-        }
+        return !/ipl/i.test(password);
     }
 
 }
