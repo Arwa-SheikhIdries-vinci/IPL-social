@@ -47,5 +47,13 @@ describe("PasswordChecker", function () {
     
         expect(result).toBe(true);
     });
+
+    it("should return false if the password has no number", () => {
+        const password = "password";
+    
+        const result = new PasswordChecker().number(password);
+    
+        expect(result).toBe(false);
+    });
     
 });

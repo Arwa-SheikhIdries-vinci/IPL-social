@@ -10,5 +10,8 @@ export class PasswordChecker {
         if(password.match(/\d+/g)){
             return true;
         }
+        if(!password.match(/\d+/g)){
+            return false;
+        }
     }
 }
