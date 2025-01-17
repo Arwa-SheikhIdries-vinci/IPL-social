@@ -4,6 +4,9 @@ export class PasswordChecker {
         if (password.length >= 8) {
             return true;
         }
+        if (password.length < 8) {
+            return false;
+        }
     }
 
 

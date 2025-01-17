@@ -15,5 +15,13 @@ describe("PasswordChecker", function () {
     
         expect(result).toBe(true);
     });    
+
+    it("should return false if the password has less than 8 characters", () => {
+        const password = "pass";
+    
+        const result = new PasswordChecker().minimum8Characters(password);
+    
+        expect(result).toBe(false);
+    });
     
 });
