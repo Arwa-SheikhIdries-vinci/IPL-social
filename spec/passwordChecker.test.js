@@ -24,4 +24,36 @@ describe("PasswordChecker", function () {
         expect(result).toBe(false);
     });
     
+    it("should return true if the password has 1 special character", () => {
+        const password = "password!";
+    
+        const result = new PasswordChecker().specialCharaters(password);
+    
+        expect(result).toBe(true);
+    });
+
+    it("should return false if the password has no special character", () => {
+        const password = "password";
+    
+        const result = new PasswordChecker().specialCharaters(password);
+    
+        expect(result).toBe(false);
+    });
+
+    it("should return true if the password has 1 number", () => {
+        const password = "password1";
+    
+        const result = new PasswordChecker().number(password);
+    
+        expect(result).toBe(true);
+    });
+
+    it("should return false if the password has no number", () => {
+        const password = "password";
+    
+        const result = new PasswordChecker().number(password);
+    
+        expect(result).toBe(false);
+    });
+    
 });
